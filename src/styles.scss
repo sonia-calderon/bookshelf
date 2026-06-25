@@ -1,0 +1,93 @@
+@use '@angular/material' as mat;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brand */
+  --color-primary: #8a9a5b;
+  --color-secondary: #b58451;
+  --color-tertiary: #e9e4d9;
+
+  /* Surface */
+  --color-background: #FAF9F5;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #333333;
+  --color-text-light: #666666;
+
+  /* Borders */
+  --color-border: #d9d4c8;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding-inline: 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.mobile-menu-button {
+  color: var(--color-primary);
+}
+
+.mobile-menu-panel {
+  min-width: 220px;
+}
+
+.mat-mdc-menu-panel {
+  border-radius: 16px !important;
+  border: 1px solid var(--color-tertiary);
+  background: var(--color-background) !important;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04) !important;
+
+  padding: 0.5rem !important;
+}
+
+.mat-mdc-menu-item {
+  border-radius: 10px;
+  min-height: 48px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.mat-mdc-menu-item:hover {
+  background-color: var(--color-tertiary) !important;
+}
+
+.mat-mdc-menu-item mat-icon {
+  color: var(--color-primary);
+  margin-right: 0.75rem;
+}

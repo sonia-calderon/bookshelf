@@ -1,0 +1,126 @@
+.profile__header {
+  margin-bottom: 2.5rem;
+
+  h1 {
+        margin: 0;
+        font-family: Georgia, serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-text);
+
+        @media (max-width: 768px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    p {
+        margin-top: 0.75rem;
+        max-width: 550px;
+        color: var(--color-text-light);
+        line-height: 1.8;
+    }
+}
+
+.profile__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile__card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 14px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.profile__user {
+  justify-content: flex-start;
+}
+
+.profile__user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile__user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile__user-data {
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: Georgia, serif;
+    text-transform: capitalize;
+  }
+}
+
+.btn-signout {
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+
+  &:hover {
+    background: #f7f5ef;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+
+.profile__cta {
+  h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+  }
+
+  p {
+    margin-top: 0.75rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+  }
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: auto;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
